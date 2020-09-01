@@ -11,6 +11,21 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
+## Create migrations, views and controllers
+```elixir
+mix phx.gen.json Management Project projects title:string description:text
+```
+
+## Create database
+```elixir
+mix ecto.create
+```
+
+## Run migrations
+```elixir
+mix ecto.migrate
+```
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/

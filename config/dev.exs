@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :project_management_elixir, ProjectManagementElixir.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "ryanwire",
+  password: "",
   database: "project_management_elixir_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
