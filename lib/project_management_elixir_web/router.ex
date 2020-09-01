@@ -13,6 +13,11 @@ defmodule ProjectManagementElixirWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :json_api do
+    plug :accepts, ["json_api"]
+    plug JaSerializer.Deserializer
+  end
+
   # scope "/", ProjectManagementElixirWeb do
   #   pipe_through :browser
 
