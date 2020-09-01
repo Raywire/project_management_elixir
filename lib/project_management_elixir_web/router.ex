@@ -13,16 +13,18 @@ defmodule ProjectManagementElixirWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", ProjectManagementElixirWeb do
-    pipe_through :browser
+  # scope "/", ProjectManagementElixirWeb do
+  #   pipe_through :browser
 
-    get "/", PageController, :index
-  end
+  #   get "/", PageController, :index
+  # end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ProjectManagementElixirWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", ProjectManagementElixirWeb do
+    pipe_through :api
+
+    resources "/projects", ProjectController, only: [:index, :show]
+  end
 
   # Enables LiveDashboard only for development
   #
