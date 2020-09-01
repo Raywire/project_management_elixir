@@ -26,6 +26,25 @@ mix ecto.create
 mix ecto.migrate
 ```
 
+Endpoints:
+----------
+
+### Get all projects:
+
+`GET /api/projects`
+
+### Get a single project:
+
+`GET /api/projects/:id`
+
+### Get all documents:
+
+`GET /api/documents`
+
+### Get a single document:
+
+`GET /api/documents/:id`
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/
